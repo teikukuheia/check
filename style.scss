@@ -1,9 +1,8 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    // filter: blur(0px) !important;
-    // outline: 1px dotted green;
 }
 body {
+    min-width: 410px;
     overflow-x: hidden;
     height: 100vh;
     background: #F6F2FF;
@@ -16,10 +15,17 @@ header {
     display: flex;
     align-items: center;
     margin: 0 4rem;
-    h2 {
+    .logo {
+        user-select: none;
+        cursor: pointer;
         margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-weight: 600;
     }
     .links {
+        z-index: 999;
         display: block;
         margin-left: auto;
         div {
@@ -33,7 +39,7 @@ header {
             .btn {
                 background: black;
                 color: white;
-                padding: 0.8rem 3rem;
+                padding: 0.6rem 2.6rem;
                 border-radius: 8px;
             }
         }
@@ -44,7 +50,7 @@ header {
     margin: 9rem 0;
     h1 {
         font-weight: 900;
-        font-size: 42px;
+        font-size: 48px;
         background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -53,10 +59,12 @@ header {
         color: #696C73;
     }
     .styled-btn {
+        user-select: none;
+        z-index: 5;
         background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
         color: black;
         text-decoration: none;
-        box-shadow: 0 4px 6px -4px rgba(24,39,75,.12), 0 8px 8px -4px rgba(24,39,75,.08);
+        box-shadow: 0 4px 6px -4px rgba(24,39,75,.30), 0 8px 8px -4px rgba(24,39,75,.30);
         border-radius: 10px;
         padding: 0.8rem 3.2rem;
     }
@@ -68,6 +76,8 @@ header {
         align-items: flex-start;
     }
     .images {
+        z-index: 1;
+        user-select: none;
         position: relative;
         top: -350px;
     }
@@ -99,9 +109,9 @@ header {
     height: 350px;
     width: 350px;
     background: #AF52DE;
-    filter: blur(220px);
+    filter: blur(170px);
     border-radius: 9999px;
-    bottom: -125px;
+    bottom: -25px;
     left: -105px;
 }
 .rose {
@@ -109,10 +119,13 @@ header {
     height: 350px;
     width: 350px;
     background: #FF375F;
-    filter: blur(220px);
+    filter: blur(170px);
     border-radius: 9999px;
-    bottom: -105px;
+    bottom: -45px;
     right: 0;
+}
+p, a {
+    font-weight: 500 !important;
 }
 @media screen and (max-width: 768px){
     header {
@@ -126,6 +139,23 @@ header {
                     display: inline-block;
                 }
             }
+        }
+    }
+    .landing {
+        .container {
+            align-items: center;
+            flex-direction: column;
+        }
+        .info {
+            max-width: 540px;
+            text-align: center;
+        }
+        .styled-btn {
+            display: block;
+            margin: 0 auto;
+        }
+        .images {
+            top: -270px;
         }
     }
 }

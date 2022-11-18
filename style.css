@@ -3,6 +3,7 @@
 }
 
 body {
+  min-width: 410px;
   overflow-x: hidden;
   height: 100vh;
   background: #F6F2FF;
@@ -17,10 +18,20 @@ header {
   align-items: center;
   margin: 0 4rem;
 }
-header h2 {
+header .logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
 }
 header .links {
+  z-index: 999;
   display: block;
   margin-left: auto;
 }
@@ -36,7 +47,7 @@ header .links div a {
 header .links div .btn {
   background: black;
   color: white;
-  padding: 0.8rem 3rem;
+  padding: 0.6rem 2.6rem;
   border-radius: 8px;
 }
 
@@ -46,7 +57,7 @@ header .links div .btn {
 }
 .landing h1 {
   font-weight: 900;
-  font-size: 42px;
+  font-size: 48px;
   background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -56,10 +67,15 @@ header .links div .btn {
   color: #696C73;
 }
 .landing .styled-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 5;
   background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
   color: black;
   text-decoration: none;
-  box-shadow: 0 4px 6px -4px rgba(24, 39, 75, 0.12), 0 8px 8px -4px rgba(24, 39, 75, 0.08);
+  box-shadow: 0 4px 6px -4px rgba(24, 39, 75, 0.3), 0 8px 8px -4px rgba(24, 39, 75, 0.3);
   border-radius: 10px;
   padding: 0.8rem 3.2rem;
 }
@@ -71,6 +87,11 @@ header .links div .btn {
   align-items: flex-start;
 }
 .landing .images {
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
   top: -350px;
 }
@@ -103,9 +124,9 @@ header .links div .btn {
   height: 350px;
   width: 350px;
   background: #AF52DE;
-  filter: blur(220px);
+  filter: blur(170px);
   border-radius: 9999px;
-  bottom: -125px;
+  bottom: -25px;
   left: -105px;
 }
 
@@ -114,10 +135,14 @@ header .links div .btn {
   height: 350px;
   width: 350px;
   background: #FF375F;
-  filter: blur(220px);
+  filter: blur(170px);
   border-radius: 9999px;
-  bottom: -105px;
+  bottom: -45px;
   right: 0;
+}
+
+p, a {
+  font-weight: 500 !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -126,5 +151,20 @@ header .links div .btn {
   }
   header .links div .btn {
     display: inline-block;
+  }
+  .landing .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .landing .info {
+    max-width: 540px;
+    text-align: center;
+  }
+  .landing .styled-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .landing .images {
+    top: -270px;
   }
 }
