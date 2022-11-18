@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  background: #F6F2FF;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+}
+header h2 {
+  margin: 0;
+}
+header .links {
+  display: block;
+  margin-left: auto;
+}
+header .links div {
+  display: flex;
+  gap: 3.1rem;
+  align-items: center;
+}
+header .links div a {
+  text-decoration: none;
+  color: black;
+}
+header .links div .btn {
+  background: black;
+  color: white;
+  padding: 0.8rem 3rem;
+  border-radius: 8px;
+}
+
+.landing {
+  z-index: 4;
+  margin: 9rem 0;
+}
+.landing h1 {
+  font-weight: 900;
+  font-size: 42px;
+  background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.landing p {
+  color: #696C73;
+}
+.landing .styled-btn {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 4px 6px -4px rgba(24, 39, 75, 0.12), 0 8px 8px -4px rgba(24, 39, 75, 0.08);
+  border-radius: 10px;
+  padding: 0.8rem 3.2rem;
+}
+.landing .info {
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.purple, .rose {
+  z-index: 1;
+}
+
+.purple {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background: #AF52DE;
+  filter: blur(220px);
+  border-radius: 9999px;
+  bottom: -125px;
+  left: -105px;
+}
+
+.rose {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background: #FF375F;
+  filter: blur(220px);
+  border-radius: 9999px;
+  bottom: -105px;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header .links a {
+    display: none;
+  }
+  header .links div .btn {
+    display: inline-block;
+  }
+}
