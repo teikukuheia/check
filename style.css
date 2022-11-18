@@ -13,6 +13,7 @@ body {
 }
 
 header {
+  max-width: 1440px;
   height: 72px;
   display: flex;
   align-items: center;
@@ -37,7 +38,7 @@ header .links {
 }
 header .links div {
   display: flex;
-  gap: 3.1rem;
+  gap: 3vw;
   align-items: center;
 }
 header .links div a {
@@ -49,6 +50,13 @@ header .links div .btn {
   color: white;
   padding: 0.6rem 2.6rem;
   border-radius: 8px;
+}
+
+.header {
+  width: 100%;
+  max-width: 1440px;
+  display: block;
+  margin: 0 auto;
 }
 
 .landing {
@@ -80,6 +88,7 @@ header .links div .btn {
   padding: 0.8rem 3.2rem;
 }
 .landing .info {
+  z-index: 999;
   max-width: 425px;
   display: flex;
   flex-direction: column;
@@ -124,7 +133,7 @@ header .links div .btn {
   height: 350px;
   width: 350px;
   background: #AF52DE;
-  filter: blur(170px);
+  filter: blur(200px);
   border-radius: 9999px;
   bottom: -25px;
   left: -105px;
@@ -135,7 +144,7 @@ header .links div .btn {
   height: 350px;
   width: 350px;
   background: #FF375F;
-  filter: blur(170px);
+  filter: blur(200px);
   border-radius: 9999px;
   bottom: -45px;
   right: 0;
