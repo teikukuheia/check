@@ -67,6 +67,22 @@ header {
         gap: 2rem;
         align-items: flex-start;
     }
+    .container {
+        justify-content: space-around;
+        display: flex;
+        .spline {
+            // z-index: 1;
+            position: relative;
+            top: 250px;
+        }
+        .card {
+            z-index: 2;
+        }
+        img {
+            width: auto;
+            height: 290px;
+        }
+    }
 }
 .purple, .rose {
     z-index: 1;
