@@ -70,15 +70,23 @@ header .links div .btn {
   gap: 2rem;
   align-items: flex-start;
 }
+.landing .images {
+  position: relative;
+  top: -350px;
+}
 .landing .container {
   justify-content: space-around;
   display: flex;
 }
 .landing .container .spline {
+  height: 350px;
+  z-index: 1;
   position: relative;
-  top: 250px;
+  top: 340px;
 }
 .landing .container .card {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   z-index: 2;
 }
 .landing .container img {

@@ -67,15 +67,22 @@ header {
         gap: 2rem;
         align-items: flex-start;
     }
+    .images {
+        position: relative;
+        top: -350px;
+    }
     .container {
         justify-content: space-around;
         display: flex;
         .spline {
-            // z-index: 1;
+            height: 350px;
+            z-index: 1;
             position: relative;
-            top: 250px;
+            top: 340px;
         }
         .card {
+            background-color: rgba(0,0,0,0);
+            border: none;
             z-index: 2;
         }
         img {
