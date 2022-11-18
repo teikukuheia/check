@@ -38,7 +38,7 @@ header .links {
 }
 header .links div {
   display: flex;
-  gap: 3vw;
+  gap: 2vw;
   align-items: center;
 }
 header .links div a {
