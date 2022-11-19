@@ -119,6 +119,7 @@ p, a {
     font-weight: 500 !important;
 }
 .buttons {
+    align-items: center;
     display: flex;
     gap: 12px;
 }
@@ -131,10 +132,14 @@ p, a {
         margin: 0;
         color: #9A9EA5;
     }
-    margin-top: 2rem;
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+.space {
+    width: 100%;
+    display: block;
+    height: 100px;
 }
 @media screen and (max-width: 768px){
     .buttons {
