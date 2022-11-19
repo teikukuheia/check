@@ -146,7 +146,7 @@ p, a {
 }
 
 .learn_more {
-  cursor: pointer;
+  cursor: default;
   display: flex;
   gap: 1rem;
   align-items: center;
